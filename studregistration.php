@@ -58,10 +58,14 @@ include "connection.php"
 
                     if(isset($_POST["sub"]))
                     {
-                        
+                      
                     }
 
                     ?>
+                    <div class="alert" id="alert1">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>SUCCESS!</strong> you are recognised
+                    </div>
 
                     <div id="container_signin">
                         <p>Already have an account? <a href="#">Sign in</a>.</p>

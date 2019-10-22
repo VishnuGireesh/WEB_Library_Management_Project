@@ -28,6 +28,27 @@ body {
     text-align: center;
 }
 
+.alert {
+    padding: 20px;
+    background-color: #22b329a4;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
 * {
     box-sizing: border-box
 }
@@ -76,7 +97,11 @@ input[type=tel]:focus {
 
 #bor {
     padding: 0px;
-    color: rgb(232, 231, 248);
+    color: rgb(94, 104, 93);
+}
+
+#alert1 {
+    width: 55%;
 }
 
 
