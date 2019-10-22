@@ -1,0 +1,132 @@
+body {
+    background-image: url(images/libr.jpg);
+}
+
+#container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Add padding to containers */
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {
+    width: 60%;
+    padding: 15px;
+    margin: 0px 0 5px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#sel {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+
+#sel:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#bor {
+    padding: 0px;
+    color: rgb(232, 231, 248);
+}
+
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+#formcontainer {
+    width: 55%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#container_signin {
+    text-align: center;
+    width: 55%;
+}
+
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    text-align: center;
+}
