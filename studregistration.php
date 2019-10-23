@@ -1,6 +1,5 @@
 <?php
 include "connection.php"
-
 ?>
 
 <html>
@@ -49,7 +48,12 @@ include "connection.php"
                                 <option value=3>SEM 3</option>
                                 <option value=4>SEM 4</option>
                               </select><br>
+
+                              <label for="name"><b>Enrollement NO</b></label><br>
+                            <input type="text" placeholder="Enter Name" name="eno" required><br><br>
                         </fieldset>
+
+                        
 
                         <button type="submit" class="registerbtn" name="sub">Register</button>
                     </div>
@@ -58,15 +62,21 @@ include "connection.php"
 
                     if(isset($_POST["sub"]))
                     {
-                      
+                      mysqli_query($link,"insert into studreg (name,uname,pass,email,phone,sem,eno) values ('$_POST[name]','$_POST[uname]','$_POST[psw]','$_POST[email]','$_POST[phone]',$_POST[sem],$_POST[eno])");    
+                    
+                      ?>
+
+                      <div class="alert" id="alert1">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>SUCCESS!</strong> you are registered successfully!!
+                    </div>
+
+                    <?php
+
                     }
 
                     ?>
-                    <div class="alert" id="alert1">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                        <strong>SUCCESS!</strong> you are recognised
-                    </div>
-
+                    
                     <div id="container_signin">
                         <p>Already have an account? <a href="#">Sign in</a>.</p>
                     </div>
