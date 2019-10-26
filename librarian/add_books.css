@@ -14,16 +14,12 @@
     float: left;
     width: 5%;
     padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
 }
 
 .column2 {
     float: left;
     width: 95%;
     padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
 }
 
 .column3 {
@@ -135,4 +131,28 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+
+/* Alert box styling */
+
+.alert {
+    padding: 20px;
+    background-color: #22b329a4;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
 }

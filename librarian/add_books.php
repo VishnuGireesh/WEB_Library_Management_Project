@@ -1,5 +1,6 @@
 <?php
     include "connection.php";
+    session_start();
 ?>
 
 <html>
@@ -31,14 +32,14 @@
                         <div class="colum3">
                             <!-- Main area starts here -->
                             <div id="addbookbox">
-                                <form method="POST">
+                                <form method="POST" enctype='multipart/form-data'>
                                     <fieldset>
                                         <legend>ADD NEW BOOKS</legend>
                                        
                                         <input type="text" placeholder="Book Name" name="name" required><br>
                                         
                                         <label for="name"><b>Image</b></label><br>
-                                        <input type="file" placeholder="Book Image" name="name" required><br>
+                                        <input type="file" name="img" accept="image/jpeg" required>
 
                                         <input type="text" placeholder="Authour Name" name="author" required><br>
 
@@ -59,10 +60,25 @@
                                 </form>
 
                                 <?php
-                                    if(isset($_POST["sub"]))
+                                 $name=$_SESSION['admin'];
+                                    
+                                 if(isset($_POST["sub"]))
                                     {
-                                        echo "hello";
-                                    }
+                                        if (is_uploaded_file($_FILES['img']['tmp_name'])) 
+                                        {
+                                            move_uploaded_file($_FILES['img']['tmp_name'],'books_image/'.$_FILES['img']['name']);
+                                        }
+
+                                        mysqli_query($link,"insert into books (name,author,publication,p_date,price,qty,a_qty,adm_name,image) values('$_POST[name]','$_POST[author]','$_POST[publication]','$_POST[pdate]',$_POST[price],$_POST[qty],$_POST[aqty],'$name','".$_FILES['img']['name']."')");
+
+                                         ?>
+                                <div class="alert" id="alert1">
+                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                                    <strong>SUCCESS!</strong> you are registered successfully!!
+                                </div>
+                                
+                                        <?php
+                                   }
                                 ?>
                             </div>
                         </div>

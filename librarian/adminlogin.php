@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "connection.php";
 
 ?>
@@ -56,7 +56,7 @@ include "connection.php";
                     <?php
                     }
                     else{
-
+                        $_SESSION['admin']=$_POST["un"];
                  ?>
 
                         <script>
