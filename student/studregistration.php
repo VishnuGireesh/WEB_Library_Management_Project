@@ -62,7 +62,7 @@ include "connection.php"
 
                     if(isset($_POST["sub"]))
                     {
-                      mysqli_query($link,"insert into studreg (name,uname,pass,email,phone,sem,eno) values ('$_POST[name]','$_POST[uname]','$_POST[psw]','$_POST[email]','$_POST[phone]',$_POST[sem],$_POST[eno])");    
+                      mysqli_query($link,"insert into studreg (name,uname,pass,email,phone,sem,eno,status) values ('$_POST[name]','$_POST[uname]','$_POST[psw]','$_POST[email]','$_POST[phone]',$_POST[sem],$_POST[eno],'no')");    
                     
                       ?>
 
@@ -78,7 +78,7 @@ include "connection.php"
                     ?>
                     
                     <div id="container_signin">
-                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        
                     </div>
                 </form>
             </div>

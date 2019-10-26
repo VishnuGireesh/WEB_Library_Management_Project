@@ -6,8 +6,8 @@ include "connection.php";
 
 <html>
     <head>
-        <title>student login</title>
-        <link rel="stylesheet"  href="studlogin.css">
+        <title>librarian login</title>
+        <link rel="stylesheet"  href="adminlogin.css">
     </head>
     <body>
         <div id="container">
@@ -40,7 +40,7 @@ include "connection.php";
            if(isset($_POST["sub"]))
                 {
                     $count=0;
-                    $res=mysqli_query($link,"select * from studreg where uname='$_POST[un]' && pass='$_POST[pass]'");
+                    $res=mysqli_query($link,"select * from admin where uname='$_POST[un]' && pass='$_POST[pass]'");
                     $count=mysqli_num_rows($res);
 
                     if($count==0)
@@ -54,6 +54,15 @@ include "connection.php";
 
 
                     <?php
+                    }
+                    else{
+
+                 ?>
+
+                        <script>
+                            window.location="display_student_info.php";
+                        </script>
+                <?php
                     }
                 }
                     ?>
