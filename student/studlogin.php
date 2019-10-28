@@ -1,6 +1,7 @@
 <?php
 
 include "connection.php";
+session_start();
 
 ?>
 
@@ -56,7 +57,13 @@ include "connection.php";
                     <?php
                     }
                     else{
-                        
+
+                        $_SESSION['student']=$_POST["un"];
+                        ?>
+                            <script>
+                                window.location="issued_books.php";
+                            </script>
+                    <?php 
                     }
                 }
                     ?>
