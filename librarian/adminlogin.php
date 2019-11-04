@@ -11,6 +11,16 @@ include "connection.php";
     </head>
     <body>
         <div id="container">
+        <div class="row" id="toppanel">
+            <div class="column3">
+                <div class=row>
+                    <div class="column4">
+                <img  id="book" src="images/openbook.jpeg" alt="error" height=55px><br>
+                <span>Welcome to library</span>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="row">
                 <div class="column">
 

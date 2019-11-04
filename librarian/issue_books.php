@@ -83,7 +83,7 @@ include "connection.php";
                                                 <select name="book" id="ee">
                                                     <option>--choose--</option>
                                                     <?php
-                                                        $m=mysqli_query($link,"select name from books");
+                                                        $m=mysqli_query($link,"select name from books where a_qty>0");
                                                         while($r=mysqli_fetch_array($m))
                                                         {
                                                             echo "<option>";
@@ -97,6 +97,8 @@ include "connection.php";
                                                 <input type="date" placeholder="bookissuedate" name="idate" value="<?php echo date('Y-m-d'); ?>"><br>
 
                                                 <button type="submit" name="sub2">ISSUE BOOK</button>
+
+                                                
 
                                         </form>
                                     

@@ -14,16 +14,28 @@
     float: left;
     width: 35%;
     padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
 }
 
 .column2 {
     float: left;
     width: 65%;
     padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
+}
+
+.column4 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column3 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -40,7 +52,7 @@
 
 #loginbox {
     width: 45%;
-    margin-top: 125px;
+    margin-top: 75px;
 }
 
 input[type=text],
@@ -127,4 +139,8 @@ span.psw {
 
 .closebtn:hover {
     color: black;
+}
+
+#book {
+    margin-left: 35px;
 }

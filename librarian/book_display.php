@@ -73,6 +73,7 @@
                                             echo "<td>";echo $row1["publication"];echo "</td>";
                                             echo "<td>";echo $row1["qty"];echo "</td>";
                                             echo "<td>";echo $row1["a_qty"];echo "</td>";
+                                            echo "</tr>";
                                             $count=$count-1;
                                             
                                         }
