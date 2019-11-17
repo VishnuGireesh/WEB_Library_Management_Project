@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2019 at 07:11 PM
+-- Generation Time: Nov 17, 2019 at 04:54 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -67,8 +67,11 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `name`, `author`, `publication`, `p_date`, `price`, `qty`, `a_qty`, `adm_name`, `image`) VALUES
-(1, 'sudheesh G', 'zz', 'zz', '2019-10-05', 44, 44, 44, 'def', '2.JPG'),
-(2, 'qqqq', 'qq', 'ss', '2019-10-04', 23, 45, 45, 'def', 'WIN_20180226_15_41_09_Pro.jpg');
+(8, 'The Lost Symbol', 'Dan Brown ', 'Doubleday', '2019-10-01', 125, 125, 125, 'def', '1.jpg'),
+(9, 'Animal Farm', 'George Orwell', ' NAL ', '2019-10-03', 255, 78, 78, 'def', '2.jpg'),
+(10, 'Unstoppable', 'Tim Green ', ' HarperCollins', '2019-10-11', 25, 123, 123, 'def', '3.jpg'),
+(11, 'The Alchemist', ' Paulo Coelho', 'HarperCollins', '2019-10-18', 1000, 500, 499, 'def', '4.jpg'),
+(12, 'Saving Fish from Drowning', 'Amy Tan ', 'Ballantine Books', '2019-09-05', 124, 50, 50, 'def', '5.jpg');
 
 -- --------------------------------------------------------
 
@@ -94,11 +97,8 @@ CREATE TABLE `issue_books` (
 --
 
 INSERT INTO `issue_books` (`id`, `s_eno`, `s_name`, `s_sem`, `s_contact`, `s_email`, `b_name`, `b_issue_date`, `b_return_date`, `s_uname`) VALUES
-(1, 1234, 'sudheesh G', 3, '123-456-7896', 'vishnugireesh310630@gmail.com', '--choose--', '2019-10-26', '0000-00-00', 'admin'),
-(2, 1234, 'sudheesh G', 3, '123-456-7896', 'vishnugireesh310630@gmail.com', 'qqqq', '2019-10-26', '0000-00-00', 'admin'),
-(3, 456, 'sudheesh G', 3, '974-612-7107', 'vishnugireesh310630@gmail.com', 'sudheesh G', '2019-10-26', '0000-00-00', 're'),
-(4, 123456, 'ww', 3, '123-789-9632', 'vishnugireesh310630@gmail.com', 'sudheesh G', '2019-10-26', '0000-00-00', 'rt'),
-(5, 1234, 'sudheesh G', 3, '123-456-7896', 'vishnugireesh310630@gmail.com', 'sudheesh G', '2019-10-26', '0000-00-00', 'admin');
+(10, 456, 'sudheesh G', 3, '974-612-7107', 'vishnugireesh310630@gmail.com', 'sudheesh G', '2019-11-04', '2019-11-04', 're'),
+(11, 123, 'Manu', 2, '123-456-7896', 'manu@gmail.com', 'The Alchemist', '2019-11-17', '0000-00-00', 'student');
 
 -- --------------------------------------------------------
 
@@ -123,9 +123,8 @@ CREATE TABLE `studreg` (
 --
 
 INSERT INTO `studreg` (`id`, `name`, `uname`, `pass`, `email`, `phone`, `sem`, `eno`, `status`) VALUES
-(1, 'sudheesh G', 'admin', 'wer', 'vishnugireesh310630@gmail.com', '123-456-7896', 3, 1234, 'yes'),
-(2, 'ww', 'rt', 'rt', 'vishnugireesh310630@gmail.com', '123-789-9632', 3, 123456, 'no'),
-(3, 'sudheesh G', 're', 'res', 'vishnugireesh310630@gmail.com', '974-612-7107', 3, 456, 'no');
+(4, 'Manu', 'student', 'student', 'manu@gmail.com', '123-456-7896', 2, 123, 'yes'),
+(5, 'Sankar', 'sankar', 'sankar', 'sankar123aaaaaaaa@gmail.com', '456-789-5285', 4, 456, 'yes');
 
 --
 -- Indexes for dumped tables
@@ -169,19 +168,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `issue_books`
 --
 ALTER TABLE `issue_books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `studreg`
 --
 ALTER TABLE `studreg`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

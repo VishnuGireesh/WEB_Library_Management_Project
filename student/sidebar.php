@@ -1,22 +1,26 @@
-<div class="column">
-                        <div id="mySidenav" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="add_books.php">ADD BOOKS</a>
-                                <a href="#">Services</a>
-                                <a href="#">Clients</a>
-                                <a href="#">Contact</a>
-                                </div>
+<div class="column" style="background-color:black;">
+<h3 style="color:aqua;">MENU</h3>
+        <div class="row" id="opt">
+                <div class="menucolumn">
+                   <a href="#">Issued Books</a>     
+                </div>
+        </div>
 
-                               
-                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="row" id="opt">
+                <div class="menucolumn">
+                   <a href="#">Search Books</a>     
+                </div>
+        </div>
 
-                                <script>
-                                function openNav() {
-                                document.getElementById("mySidenav").style.width = "250px";
-                                }
+        <div class="row" id="opt">
+                <div class="menucolumn">
+                   <a href="#">Return Book</a>     
+                </div>
+        </div>
 
-                                function closeNav() {
-                                document.getElementById("mySidenav").style.width = "0";
-                                }
-                                </script>
-                        </div>
+        <div class="row" id="opt">
+                <div class="menucolumn">
+                   <a href="#"> View Books</a>     
+                </div>
+        </div>
+</div>

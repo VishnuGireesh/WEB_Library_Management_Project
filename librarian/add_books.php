@@ -7,6 +7,7 @@
     <head>
         <title>Addbooks page</title>
         <link rel="stylesheet" href="add_books.css">
+        <script src="https://kit.fontawesome.com/8877312db4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="container">

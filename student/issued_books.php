@@ -7,6 +7,7 @@ session_start();
     <head>
         <title>demo page</title>
         <link rel="stylesheet" href="issued_books.css">
+        <script src="https://kit.fontawesome.com/8877312db4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="container">

@@ -15,7 +15,7 @@ include "connection.php";
             <div class="column3">
                 <div class=row>
                     <div class="column4">
-                <img  id="book" src="images/openbook.jpeg" alt="error" height=55px><br>
+                <img  id="book" src="images/openbook.jpeg" alt="error" height=45px><br>
                 <span>Welcome to library</span>
                     </div>
                 </div>

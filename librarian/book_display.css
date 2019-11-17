@@ -12,14 +12,16 @@
 
 .column {
     float: left;
-    width: 5%;
+    width: 10%;
     padding: 10px;
+    min-height: 1000px;
 }
 
 .column2 {
     float: left;
-    width: 95%;
+    width: 90%;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .column3 {
@@ -123,4 +125,120 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+
+/* topbar styling */
+
+#top {
+    color: white;
+}
+
+.subcolumn1 {
+    float: left;
+    width: 30%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subcolumn2 {
+    float: left;
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subcolumn3 {
+    float: left;
+    width: 10%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* sidebar styling */
+
+.menucolumn {
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.menucolumn a {
+    text-decoration: none;
+    color: red;
+}
+
+#pad {
+    margin-bottom: 15px;
+}
+
+#opt {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#opt:hover {
+    background-color: white;
+}
+
+
+/* topbar styling */
+
+#top {
+    color: white;
+}
+
+.subcolumn1 {
+    float: left;
+    width: 30%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subcolumn2 {
+    float: left;
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subcolumn3 {
+    float: left;
+    width: 10%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* sidebar styling */
+
+.menucolumn {
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.menucolumn a {
+    text-decoration: none;
+    color: red;
+}
+
+#pad {
+    margin-bottom: 15px;
+}
+
+#opt {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#opt:hover {
+    background-color: white;
 }

@@ -1,11 +1,13 @@
 <?php
     include "connection.php";
+    session_start();
 ?>
 
 <html>
     <head>
         <title>Student Aprooval</title>
         <link rel="stylesheet" href="demo.css">
+        <script src="https://kit.fontawesome.com/8877312db4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="container">

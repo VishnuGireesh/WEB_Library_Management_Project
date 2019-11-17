@@ -1,5 +1,6 @@
 <?php
     include "connection.php";
+    session_start();
     $b_name=$_GET["bname"];
 ?>
 
